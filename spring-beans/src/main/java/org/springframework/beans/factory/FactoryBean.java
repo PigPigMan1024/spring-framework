@@ -95,7 +95,7 @@ public interface FactoryBean<T> {
 	Class<?> getObjectType();
 
 	/**
-	 * 这个工厂管理的对象是单例吗？也就是说，
+	 * 这个工厂管理的对象是否为单例,也就是说，
 	 * {@link getObject()} 是否总是返回相同的对象（可以缓存的引用）？
 	 * <p><b>注意：<b>如果 FactoryBean 指示持有单例对象，则从 {@code getObject()} 返回的对象可能会被拥有的 BeanFactory 缓存。
 	 * 因此，除非 FactoryBean 始终公开相同的引用，否则不要返回 {@code true}。
