@@ -130,7 +130,7 @@ import org.springframework.lang.Nullable;
 public interface BeanFactory {
 
 	/**
-	 * 译:用于解除对{@link FactoryBean} 实例的引用,并将其与 FactoryBean 实例区分开来.
+	 * 译:用于解除对{@link FactoryBean} 实例的引用,并将其与 FactoryBean 创建的实例区分开来.
 	 * 举个例子,如果这是一个名称为 {@code myJndiObject} 的 FactoryBean 实例, getting
 	 * {@code myJndiObject} 将返回工厂实例,而不是工厂创建的实例
 	 * <p>
