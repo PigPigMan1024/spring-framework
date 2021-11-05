@@ -31,7 +31,9 @@ import org.springframework.lang.Nullable;
  * <p>该接口被包含许多bean定义的对象实现,每一个都由唯一字符串名称标识.
  * 根据bean的定义,该工厂将会返回被包含对象的独立实例(原型设计模式),或是
  * 一个单例的共享实例(一个比单例模式更好的设计模式的选择,工厂范围内的单例)
- * 返回哪种类型的实例取决于bean factory 的配置:这个
+ * 返回哪种类型的实例取决于bean factory 的配置:API是相同的,从Spring 2.x
+ * 开始,根据具体的应用程序上下文还可以选择更多的范围(例如,web环境中"request"
+ * 和"session"的范围)
  * <p>
  * <p>
  * The root interface for accessing a Spring bean container.
